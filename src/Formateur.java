@@ -7,7 +7,7 @@ public class Formateur extends Utilisateur {
 
     @Override 
     public String getRole(){
-        return "Etudiant";
+        return "Formateur";
     }
 
     public final  void setAnneesExperience(Byte anneesExperience) {
