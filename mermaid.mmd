@@ -1,0 +1,30 @@
+classDiagram
+    direction TB
+
+    class Utilisateur {
+        <<abstract>>
+        -Long id
+        -String nom
+        -String email
+    }
+
+    class Etudiant {
+    }
+
+    class Formateur {
+    }
+
+    class Formation {
+    }
+
+    class Inscription {
+    }
+
+    %% Relations IS-A (Héritage)
+    Utilisateur <|-- Etudiant 
+    Utilisateur <|-- Formateur 
+
+    %% Relations HAS-A (Association)
+    Formation "1" --> "1" Formateur 
+    Formation "1" --> "*" Inscription 
+    Inscription "*" --> "1" Etudiant 
