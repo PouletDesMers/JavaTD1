@@ -1,8 +1,9 @@
 public class Formateur extends Utilisateur {
     private Byte anneesExperience;
 
-    public Formateur(Long id, String nom, String email) {
+    public Formateur(Long id, String nom, String email, Byte anneesExperience) {
         super(id,nom, email);
+        setAnneesExperience(anneesExperience);
     }
 
     @Override 
