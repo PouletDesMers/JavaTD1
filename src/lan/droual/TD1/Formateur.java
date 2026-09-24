@@ -1,3 +1,5 @@
+package lan.droual.TD1;
+
 public class Formateur extends Utilisateur {
     private Byte anneesExperience;
 

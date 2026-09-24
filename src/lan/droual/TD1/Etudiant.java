@@ -1,3 +1,5 @@
+package lan.droual.TD1;
+
 public class Etudiant extends Utilisateur{
     private Niveau niveau;
     private String numeroEtudiant;
